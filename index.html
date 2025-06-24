@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Sưu Tập Game Mini</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .game-content {
+            padding: 20px;
+        }
+
+        .game-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffdd40;
+        }
+
+        .game-description {
+            font-size: 1rem;
+            opacity: 0.8;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .play-button {
+            display: inline-block;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+        }
+
+        .play-button:hover {
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bộ Sưu Tập Game Mini</h1>
+            <p class="subtitle">Chào mừng bạn đến với bộ sưu tập game mini! Chọn một trò chơi dưới đây để bắt đầu cuộc
+                phiêu lưu của bạn.</p>
+        </header>
+
+        <div class="games-grid">
+            <!-- Game 1: Flappy Bird -->
+            <div class="game-card">
+                <img src="https://m.media-amazon.com/images/I/21ZzpgClpiL.png" alt="Flappy Bird" class="game-image">
+                <div class="game-content">
+                    <h2 class="game-title">Flappy Bird</h2>
+                    <p class="game-description">Điều khiển chú chim vượt qua các chướng ngại vật. Game đơn giản nhưng
+                        cực kỳ gây nghiện!</p>
+                    <a href="/flappy-bird-master/index.html" class="play-button">Chơi Ngay</a>
+                </div>
+            </div>
+
+            <!-- Game 2: Memory Card Game -->
+            <div class="game-card">
+                <img src="https://cloud.educaplay.com/r2/img/activities/RELACIONAR_MOSAICO/logoActivity.png?v=1750406660"
+                    alt="Memory Card Game" class="game-image">
+                <div class="game-content">
+                    <h2 class="game-title">Trò Chơi Trí Nhớ</h2>
+                    <p class="game-description">Rèn luyện trí nhớ bằng cách tìm các cặp thẻ giống nhau. Game giúp cải
+                        thiện trí nhớ của bạn!</p>
+                    <a href="/memory-card-game-main/index.html" class="play-button">Chơi Ngay</a>
+                </div>
+            </div>
+
+            <!-- Game 3: Puzzle Game -->
+            <div class="game-card">
+                <img src="https://i.ytimg.com/vi/a1BaHihknHo/maxresdefault.jpg" alt="Puzzle Game" class="game-image">
+                <div class="game-content">
+                    <h2 class="game-title">Xếp Hình</h2>
+                    <p class="game-description">Ghép các mảnh ghép thành bức tranh hoàn chỉnh. Thử thách kỹ năng giải đố
+                        của bạn!</p>
+                    <a href="/slide-puzzle-master/index.html" class="play-button">Chơi Ngay</a>
+                </div>
+            </div>
+
+            <!-- Game 4: Sudoku -->
+            <div class="game-card">
+                <img src="https://sudoku-puzzles.net/wp-content/puzzles/sudoku/easy/1.png" alt="Sudoku"
+                    class="game-image">
+                <div class="game-content">
+                    <h2 class="game-title">Sudoku</h2>
+                    <p class="game-description">Trò chơi số học kinh điển. Điền số từ 1 đến 9 vào các ô trống theo luật
+                        Sudoku.</p>
+                    <a href="/Sudoku-master/index.html" class="play-button">Chơi Ngay</a>
+                </div>
+            </div>
+
+            <!-- Game 5: Tic Tac Toe -->
+            <div class="game-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJd6tIrqyz0C3Quc9ohvlqK6DhvTXO2gJKQA&s"
+                    alt="Tic Tac Toe" class="game-image">
+                <div class="game-content">
+                    <h2 class="game-title">Cờ Caro</h2>
+                    <p class="game-description">Trò chơi cổ điển X và O. Thách thức bạn bè trong trò chơi trí tuệ đơn
+                        giản này!</p>
+                    <a href="/Tic-Tac-Toe-master/index.html" class="play-button">Chơi Ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Bộ Sưu Tập Game Mini</p>
+        </footer>
+    </div>
+</body>
+
+</html>
