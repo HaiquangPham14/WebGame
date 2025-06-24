@@ -1,38 +1,38 @@
 [
     {
-        "image": "../memory-card-game-main/assets/chili.png",
+        "image": "../memory-card-game/assets/chili.png",
         "name": "chili"
     },
     {
-        "image": "../memory-card-game-main/assets/grapes.png",
+        "image": "../memory-card-game/assets/grapes.png",
         "name": "grapes"
     },
     {
-        "image": "../memory-card-game-main/assets/lemon.png",
+        "image": "../memory-card-game/assets/lemon.png",
         "name": "lemon"
     },
     {
-        "image": "../memory-card-game-main/assets/orange.png",
+        "image": "../memory-card-game/assets/orange.png",
         "name": "orange"
     },
     {
-        "image": "../memory-card-game-main/assets/pineapple.png",
+        "image": "../memory-card-game/assets/pineapple.png",
         "name": "pineapple"
     },
     {
-        "image": "../memory-card-game-main/assets/strawberry.png",
+        "image": "../memory-card-game/assets/strawberry.png",
         "name": "strawberry"
     },
     {
-        "image": "../memory-card-game-main/assets/tomato.png",
+        "image": "../memory-card-game/assets/tomato.png",
         "name": "tomato"
     },
     {
-        "image": "../memory-card-game-main/assets/watermelon.png",
+        "image": "../memory-card-game/assets/watermelon.png",
         "name": "watermelon"
     },
     {
-        "image": "../memory-card-game-main/assets/cherries.png",
+        "image": "../memory-card-game/assets/cherries.png",
         "name": "cherries"
     }
 ]
